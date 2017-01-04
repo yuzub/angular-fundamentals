@@ -1,0 +1,33 @@
+{
+  "name": "angular_fundamentals",
+  "version": "1.0.0",
+  "description": "\"angular 1.4 fundamentals\"",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuzub/angular-fundamentals.git"
+  },
+  "keywords": [
+    "\"angular\""
+  ],
+  "author": "yuzub",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuzub/angular-fundamentals/issues"
+  },
+  "homepage": "https://github.com/yuzub/angular-fundamentals#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  }
+}

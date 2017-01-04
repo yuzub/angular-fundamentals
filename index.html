@@ -3,16 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Angular Fundamentals</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+	
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script> -->
+	<script src="app/lib/angular.min.js"></script>
+
+	<script src="app/js/app.js"></script>
+
 </head>
 <body>
-	<h1 ng-controller="HelloWorldCtrl">{{helloMessage}} {{2*10}}</h1>
+	<h1 ng-controller="HelloWorldCtrl">
+		{{helloMessage}}
+	</h1>
 	
-	<script type="text/javascript">
-		angular.module('app', [])
-			.controller('HelloWorldCtrl', function($scope) {
-				$scope.helloMessage = 'Hello World!';
-			});
-	</script>
 </body>
 </html>
