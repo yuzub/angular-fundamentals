@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "lite-server"
+    "dev": "lite-server",
+    "start": "node scripts/web-server.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,8 @@
     "jquery": "^3.1.1"
   },
   "devDependencies": {
-    "lite-server": "^2.2.2"
+    "express": "^4.15.3",
+    "lite-server": "^2.2.2",
+    "open": "0.0.5"
   }
 }
