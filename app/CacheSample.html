@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="eventsApp">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Event Registration</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/app.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <ul class="nav">
+          <li><a href="/NewEvent.html">Create Event</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div ng-controller="CacheSampleController">
+      Key: <input type="text" ng-model="key"><br>
+      Value: <input type="text" ng-model="value"><br>
+      <button class="but" ng-click="addToCache(key, value)">Add To Cache</button><br><br>
+      <input type="text" ng-model="keyToRead"><br>
+      <h3>Value for key - {{keyToRead}} from cache: {{readFromCache(keyToRead)}}</h3>
+      <h3>Cache Stats: {{getCacheStats()}}</h3>
+    </div>
+  </div>
+
+  <script src="/lib/jquery.min.js"></script>
+  <script src="/lib/bootstrap.min.js"></script>
+  <script src="/lib/angular.min.js"></script>
+  <script src="/lib/angular-resource.js"></script>
+
+  <script src="/js/app.js"></script>
+  <script src="/js/controllers/CacheSampleController.js"></script>
+  <script src="/js/services/EventData.js"></script>
+  <script src="/js/filters.js"></script>
+</body>
+
+</html>

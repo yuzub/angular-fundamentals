@@ -1,4 +1,12 @@
 /* app css stylesheet */
+body {
+  background-color: #bbb;
+}
+
+input.ng-invalid.ng-dirty {
+  background-color: pink
+}
+
 .hoverwell:hover {
   background-color: #52575c;
   cursor: pointer;

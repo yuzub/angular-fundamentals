@@ -1,21 +1,22 @@
 var express = require('express');
 var path = require('path');
 var open = require('open');
-// var events = require('./eventsController');
+var events = require('./eventsController');
 var port = 8000;
-var app = express();
 var rootPath = path.normalize(__dirname + '/../');
-// var bodyParser = require('body-parser');
+var bodyParser = require('body-parser');
 
-// app.use(bodyParser.urlencoded({extended: true}));
-// app.use(bodyParser.json());
+var app = express();
+
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
 app.use(express.static( rootPath + '/app'));
-/*
+
 app.get('/data/event/:id', events.get);
-app.get('/data/event', events.getAll);
+// app.get('/data/event', events.getAll);
 app.post('/data/event/:id', events.save);
-app.get('*', function(req, res) { res.sendFile(rootPath + '/app/index.html'); });
-*/
+// app.get('*', function(req, res) { res.sendFile(rootPath + '/app/index.html'); });
+
 app.listen(port, function(err) {
 	if (err) {
 		console.log(err);
