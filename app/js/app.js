@@ -6,12 +6,16 @@
     .config(function($routeProvider, $locationProvider) {
       $routeProvider
         .when('/newEvent', {
-          templateUrl: 'templates/newEvent.html',
+          templateUrl: 'templates/NewEvent.html',
           controller: 'EditEventController'
         })
         .when('/', {
           template: '<h2>Index Page</h2>',
           controller: 'EditEventController'
+        })
+        .when('/events', {
+          templateUrl: 'templates/EventList.html',
+          controller: 'EventListController'
         });
 
         $locationProvider.html5Mode(true);
